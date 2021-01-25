@@ -34,15 +34,21 @@ class SignupViewController: UIViewController {
         statusBar.backgroundColor = UIColor(hex: color!)
         signup.backgroundColor = UIColor(hex: color!)
         cancel.backgroundColor = UIColor(hex: color!)
+        
+        signup.addTarget(self, action: #selector(signupEvent), for: .touchUpInside)
+        cancel.addTarget(self, action: #selector(cancelEvent), for: .touchUpInside)
     }
     
-    func signupEvent(){
+    @objc func signupEvent(){
         Auth.auth().createUser(withEmail: email.text!, password: password.text!){ (user, err) in
-            let uid = user?.uid
+            guard let uid = user?.user.uid else { return }
             
-            Database.database().reference().child("users").child(uid).setValue(["name": name.text!])
+            Database.database().reference().child("users").child(uid).setValue(["name": self.name.text!])
             
         }
+    }
+    @objc func cancelEvent(){
+        self.dismiss(animated: true, completion: nil)
     }
     
     override func didReceiveMemoryWarning() {

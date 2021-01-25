@@ -94,7 +94,7 @@
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="hMz-Eu-CQk"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                <state key="normal" title="Signin">
+                                <state key="normal" title="Signup">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
@@ -135,7 +135,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Email" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dNK-RP-foy" customClass="HoshiTextField" customModule="TextFieldEffects">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dNK-RP-foy" customClass="HoshiTextField" customModule="TextFieldEffects">
                                 <rect key="frame" x="57" y="304" width="300" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="9XE-0F-vtM"/>
@@ -152,7 +152,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Name" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gpe-Lr-dj2" customClass="HoshiTextField" customModule="TextFieldEffects">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gpe-Lr-dj2" customClass="HoshiTextField" customModule="TextFieldEffects">
                                 <rect key="frame" x="57" y="357" width="300" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="o9p-MB-FnR"/>
@@ -169,7 +169,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jiE-Mz-Czs" customClass="HoshiTextField" customModule="TextFieldEffects">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jiE-Mz-Czs" customClass="HoshiTextField" customModule="TextFieldEffects">
                                 <rect key="frame" x="57" y="419" width="300" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="26w-bt-4XK"/>
@@ -250,10 +250,10 @@
             <size key="intrinsicContentSize" width="52" height="23.5"/>
         </designable>
         <designable name="dNK-RP-foy">
-            <size key="intrinsicContentSize" width="49" height="23.5"/>
+            <size key="intrinsicContentSize" width="48.5" height="23.5"/>
         </designable>
         <designable name="jiE-Mz-Czs">
-            <size key="intrinsicContentSize" width="77" height="23.5"/>
+            <size key="intrinsicContentSize" width="76.5" height="23.5"/>
         </designable>
         <designable name="qPu-su-Kqc">
             <size key="intrinsicContentSize" width="99" height="30.5"/>

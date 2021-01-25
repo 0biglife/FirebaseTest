@@ -11,7 +11,7 @@ import Firebase
 class LoginViewController: UIViewController {
 
     @IBOutlet weak var login: UIButton!
-    @IBOutlet weak var signin: UIButton!
+    @IBOutlet weak var signup: UIButton!
     let remoteConfig = RemoteConfig.remoteConfig()
     var color : String!
     
@@ -24,25 +24,23 @@ class LoginViewController: UIViewController {
             m.right.top.left.equalTo(self.view)
             m.height.equalTo(20)
         }
-        
         color = remoteConfig["splash_background"].stringValue
+        
         login.backgroundColor = UIColor(hex : color)
-        signin.backgroundColor = UIColor(hex : color)
+        signup.backgroundColor = UIColor(hex : color)
         
         statusBar.backgroundColor = UIColor(hex: color)
         
-        // Do any additional setup after loading the view.
+        signup.addTarget(self, action: #selector(presentSignup), for: .touchUpInside)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @objc func presentSignup(){
+        let view = self.storyboard?.instantiateViewController(identifier: "SignupViewController") as! SignupViewController
+        // ㄴ해당 뷰컬트롤러의 Storyboard ID 로 동일하게 입력 !
+        self.present(view, animated: true, completion: nil)
     }
-    */
-
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
 }

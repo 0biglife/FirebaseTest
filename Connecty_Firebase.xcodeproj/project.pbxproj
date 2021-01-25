@@ -16,6 +16,7 @@
 		3219551625BE9A22007CF206 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3219551525BE9A22007CF206 /* GoogleService-Info.plist */; };
 		32376E2625BEA441009600CC /* RemoteConfigDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32376E2525BEA441009600CC /* RemoteConfigDefaults.plist */; };
 		32376E3925BEAD88009600CC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32376E3825BEAD88009600CC /* LoginViewController.swift */; };
+		32376E4225BEC746009600CC /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32376E4125BEC746009600CC /* SignupViewController.swift */; };
 		A217BA4FB5069A578F45F26C /* Pods_Connecty_Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA38DB3633DC0EDC2E7B3511 /* Pods_Connecty_Firebase.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		3219551525BE9A22007CF206 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		32376E2525BEA441009600CC /* RemoteConfigDefaults.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = RemoteConfigDefaults.plist; sourceTree = "<group>"; };
 		32376E3825BEAD88009600CC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		32376E4125BEC746009600CC /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		A3EA33FE8C5215E373B6DB2E /* Pods-Connecty_Firebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Connecty_Firebase.release.xcconfig"; path = "Target Support Files/Pods-Connecty_Firebase/Pods-Connecty_Firebase.release.xcconfig"; sourceTree = "<group>"; };
 		B879F8B20D42460112BCF47B /* Pods-Connecty_Firebase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Connecty_Firebase.debug.xcconfig"; path = "Target Support Files/Pods-Connecty_Firebase/Pods-Connecty_Firebase.debug.xcconfig"; sourceTree = "<group>"; };
 		EA38DB3633DC0EDC2E7B3511 /* Pods_Connecty_Firebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Connecty_Firebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,11 +72,12 @@
 			isa = PBXGroup;
 			children = (
 				3219551525BE9A22007CF206 /* GoogleService-Info.plist */,
+				32376E2525BEA441009600CC /* RemoteConfigDefaults.plist */,
 				3219550025BE97C4007CF206 /* AppDelegate.swift */,
 				3219550225BE97C4007CF206 /* SceneDelegate.swift */,
-				32376E3825BEAD88009600CC /* LoginViewController.swift */,
 				3219550425BE97C4007CF206 /* ViewController.swift */,
-				32376E2525BEA441009600CC /* RemoteConfigDefaults.plist */,
+				32376E3825BEAD88009600CC /* LoginViewController.swift */,
+				32376E4125BEC746009600CC /* SignupViewController.swift */,
 				3219550625BE97C4007CF206 /* Main.storyboard */,
 				3219550925BE97C6007CF206 /* Assets.xcassets */,
 				3219550B25BE97C6007CF206 /* LaunchScreen.storyboard */,
@@ -218,6 +221,7 @@
 			files = (
 				32376E3925BEAD88009600CC /* LoginViewController.swift in Sources */,
 				3219550525BE97C4007CF206 /* ViewController.swift in Sources */,
+				32376E4225BEC746009600CC /* SignupViewController.swift in Sources */,
 				3219550125BE97C4007CF206 /* AppDelegate.swift in Sources */,
 				3219550325BE97C4007CF206 /* SceneDelegate.swift in Sources */,
 			);

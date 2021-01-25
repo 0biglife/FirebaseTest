@@ -40,7 +40,7 @@ class ViewController: UIViewController {
         box.snp.makeConstraints{ (make) in
             make.center.equalTo(self.view)
         }
-        box.image = #imageLiteral(resourceName: "FirebaseTestIcon")
+        box.image = #imageLiteral(resourceName: "connecty")
         //self.view.backgroundColor = UIColor(hex : "#000000")
     }
 
@@ -56,6 +56,10 @@ class ViewController: UIViewController {
                 exit(0) //0을 넣어주면 꺼지게 됨
             }))
             self.present(alert, animated: true, completion: nil)
+        }else{ // log in 화면 출력
+            let loginVC = self.storyboard?.instantiateViewController(identifier: "LoginViewController") as! LoginViewController //캐스팅
+            
+            self.present(loginVC, animated: false, completion: nil)
         }
         self.view.backgroundColor = UIColor(hex: color!)
     }

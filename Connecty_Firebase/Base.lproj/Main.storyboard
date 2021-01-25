@@ -1,24 +1,154 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Connecty_Firebase" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-204" y="65"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="6Go-XH-Rad">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="UK0-qx-DYb" customClass="LoginViewController" customModule="Connecty_Firebase" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TcP-zO-VZq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="connecty" translatesAutoresizingMaskIntoConstraints="NO" id="Gfr-0u-zY7">
+                                <rect key="frame" x="142" y="184" width="130" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="2gY-42-BXY"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="AFO-47-wLZ"/>
+                                    <constraint firstAttribute="width" constant="130" id="cVw-7o-ty0"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="130" id="zJg-Cu-40L"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0jW-4G-Axd" customClass="HoshiTextField" customModule="TextFieldEffects">
+                                <rect key="frame" x="57" y="363" width="300" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="20i-pl-UW6"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="ZNY-fC-Iim"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                        <color key="value" systemColor="systemOrangeColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qPu-su-Kqc" customClass="HoshiTextField" customModule="TextFieldEffects">
+                                <rect key="frame" x="57" y="425" width="300" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="HhT-qq-OEl"/>
+                                    <constraint firstAttribute="height" constant="45" id="QB7-GE-jXZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                        <color key="value" systemColor="systemOrangeColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gDb-cQ-oFY">
+                                <rect key="frame" x="57" y="488" width="300" height="45"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="EiD-xm-iMd"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="hqi-7l-w8a"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jf0-hF-6IO">
+                                <rect key="frame" x="57" y="548" width="300" height="45"/>
+                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="HUf-em-gIj"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="hMz-Eu-CQk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <state key="normal" title="Signin">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cAL-kG-N0x"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0jW-4G-Axd" firstAttribute="leading" secondItem="cAL-kG-N0x" secondAttribute="leading" constant="57" id="8N0-ty-rWe"/>
+                            <constraint firstItem="qPu-su-Kqc" firstAttribute="leading" secondItem="gDb-cQ-oFY" secondAttribute="leading" id="JAG-Jd-XDG"/>
+                            <constraint firstItem="qPu-su-Kqc" firstAttribute="trailing" secondItem="gDb-cQ-oFY" secondAttribute="trailing" id="LBC-20-hoc"/>
+                            <constraint firstItem="gDb-cQ-oFY" firstAttribute="leading" secondItem="jf0-hF-6IO" secondAttribute="leading" id="My6-bJ-32v"/>
+                            <constraint firstItem="0jW-4G-Axd" firstAttribute="trailing" secondItem="qPu-su-Kqc" secondAttribute="trailing" id="NSk-UD-MKl"/>
+                            <constraint firstItem="qPu-su-Kqc" firstAttribute="top" secondItem="0jW-4G-Axd" secondAttribute="bottom" constant="17" id="TcI-XH-6EM"/>
+                            <constraint firstItem="0jW-4G-Axd" firstAttribute="centerX" secondItem="Gfr-0u-zY7" secondAttribute="centerX" id="Tz0-bL-W0t"/>
+                            <constraint firstItem="jf0-hF-6IO" firstAttribute="top" secondItem="gDb-cQ-oFY" secondAttribute="bottom" constant="15" id="Wk8-Xq-jQN"/>
+                            <constraint firstItem="0jW-4G-Axd" firstAttribute="top" secondItem="Gfr-0u-zY7" secondAttribute="bottom" constant="49" id="fEv-Ot-JEE"/>
+                            <constraint firstItem="Gfr-0u-zY7" firstAttribute="centerX" secondItem="TcP-zO-VZq" secondAttribute="centerX" id="kD5-uV-Hl1"/>
+                            <constraint firstItem="0jW-4G-Axd" firstAttribute="leading" secondItem="qPu-su-Kqc" secondAttribute="leading" id="nk6-cC-4R2"/>
+                            <constraint firstItem="gDb-cQ-oFY" firstAttribute="trailing" secondItem="jf0-hF-6IO" secondAttribute="trailing" id="p2N-8j-dCO"/>
+                            <constraint firstItem="Gfr-0u-zY7" firstAttribute="top" secondItem="cAL-kG-N0x" secondAttribute="top" constant="140" id="qcX-45-lTX"/>
+                            <constraint firstItem="gDb-cQ-oFY" firstAttribute="top" secondItem="qPu-su-Kqc" secondAttribute="bottom" constant="18" id="sul-MD-Nnn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="login" destination="gDb-cQ-oFY" id="iOM-P1-YHt"/>
+                        <outlet property="signin" destination="jf0-hF-6IO" id="cjw-H4-HGg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0ZH-Nv-KzH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="614.49275362318849" y="64.955357142857139"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="0jW-4G-Axd">
+            <size key="intrinsicContentSize" width="70" height="30.5"/>
+        </designable>
+        <designable name="qPu-su-Kqc">
+            <size key="intrinsicContentSize" width="99" height="30.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="connecty" width="128" height="116.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
